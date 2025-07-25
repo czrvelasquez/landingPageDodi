@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the React client for the DoDi landing page. The application will present DoDi's offering and serve as the entry point for a future platform. A lightweight Node.js service will eventually provide an API to support dynamic content and form submissions.
+This repository contains the React client for the DoDi landing page. The application now includes a basic skeleton with a hero section, features, company information and a contact form. A lightweight Node.js service will eventually provide an API to support dynamic content and form submissions.
 
 ## Running the project
 
