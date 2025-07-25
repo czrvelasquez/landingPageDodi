@@ -31,7 +31,6 @@ const testimonios = [
       'Me sentí parte de una comunidad desde el primer momento. No importa si tomas un diplomado o asistes a un evento, siempre hay interacción, respuestas y muchas ganas de compartir entre colegas.',
   },
 ];
-=======
 
 function About() {
   return (
@@ -54,10 +53,7 @@ function About() {
           <TestimonioCard key={t.nombre} nombre={t.nombre} testimonio={t.testimonio} />
         ))}
       </div>
-    </section>
-=======
-    </motion.section>
-  );
+    </motion.section>);
 }
 
 export default About;
