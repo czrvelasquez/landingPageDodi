@@ -163,6 +163,40 @@
   padding: 4rem 1rem;
 }
 
+.extended-about h2 {
+  text-align: center;
+  color: var(--dodi-oscuro);
+  margin-bottom: 2rem;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.about-img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+  text-align: left;
+}
+
+.about-values {
+  padding-left: 1.25rem;
+}
+
+@media (min-width: 768px) {
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 .contact form {
   display: flex;
   flex-direction: column;
@@ -233,6 +267,13 @@
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-weight: 600;
+}
+
+.testimonio-detalle {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  opacity: 0.8;
 }
 
 .testimonio-mascot {

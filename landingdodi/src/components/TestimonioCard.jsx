@@ -1,36 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-function TestimonioCard({ nombre, testimonio, showMascot }) {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.1 }
-    );
-    if (ref.current) {
-      observer.observe(ref.current);
-    }
-    return () => observer.disconnect();
-  }, []);
-
+function TestimonioCard({ nombre, testimonio, estado, programa, showMascot }) {
   return (
-    <div
-      ref={ref}
+    <motion.div
       className="testimonio-card"
-      style={{
-        opacity: visible ? 1 : 0,
-        transform: visible ? 'translateY(0)' : 'translateY(40px)',
-        transition: 'opacity 0.6s ease, transform 0.6s ease',
-      }}
+      initial={{ opacity: 0, y: 40 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
     >
       <h3>{nombre}</h3>
+      <p className="testimonio-detalle">
+        {estado} &ndash; {programa}
+      </p>
       <p>{testimonio}</p>
       {showMascot && (
         <img
@@ -39,7 +22,7 @@ function TestimonioCard({ nombre, testimonio, showMascot }) {
           className="testimonio-mascot"
         />
       )}
-    </div>
+    </motion.div>
   );
 }
 
