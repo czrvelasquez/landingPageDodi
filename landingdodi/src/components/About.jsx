@@ -49,8 +49,13 @@ function About() {
 
       <h3 className="testimonio-title">¿Qué dice nuestra comunidad?</h3>
       <div className="testimonio-grid">
-        {testimonios.map((t) => (
-          <TestimonioCard key={t.nombre} nombre={t.nombre} testimonio={t.testimonio} />
+        {testimonios.map((t, idx) => (
+          <TestimonioCard
+            key={t.nombre}
+            nombre={t.nombre}
+            testimonio={t.testimonio}
+            showMascot={idx % 2 === 0}
+          />
         ))}
       </div>
     </motion.section>);

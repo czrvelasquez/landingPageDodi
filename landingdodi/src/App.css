@@ -61,6 +61,7 @@
   width: 150px;
   display: block;
   margin: 0 auto 1rem;
+  filter: drop-shadow(0 1px 4px rgba(255, 255, 255, 0.9));
 }
 
 .tagline {
@@ -89,6 +90,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 0.75rem;
   margin-top: 1rem;
 }
@@ -109,6 +111,27 @@
   text-decoration: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: background 0.3s;
+}
+
+.hero-button-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-button-tooltip {
+  position: absolute;
+  bottom: calc(100% + 0.5rem);
+  width: 260px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #043458;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  font-size: 0.875rem;
+  pointer-events: none;
 }
 
 .cta-button:hover,
@@ -196,17 +219,28 @@
 }
 
 .testimonio-card {
-  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
   color: #043458;
-  border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
   text-align: left;
 }
 
 .testimonio-card h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.testimonio-mascot {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 4rem;
+  height: auto;
 }
 
 /* Programas */
