@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-function TestimonioCard({ nombre, testimonio }) {
+function TestimonioCard({ nombre, testimonio, showMascot }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -32,6 +32,13 @@ function TestimonioCard({ nombre, testimonio }) {
     >
       <h3>{nombre}</h3>
       <p>{testimonio}</p>
+      {showMascot && (
+        <img
+          src="https://i.ibb.co/bjq5gNK3/dodi-2.png"
+          alt="Mascota DoDi"
+          className="testimonio-mascot"
+        />
+      )}
     </div>
   );
 }

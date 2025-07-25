@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import HeroButton from './HeroButton';
 
 function Hero() {
   return (
@@ -37,13 +38,22 @@ function Hero() {
           Comunidad, innovación e inteligencia artificial al servicio de los docentes.
         </p>
         <div className="hero-buttons">
-          <a className="cta-button" href="#contact">Únete a la comunidad</a>
-          <a className="secondary-button" href="/planeaciones">
-            Descubre nuestra IA para planeaciones
-          </a>
-          <a className="secondary-button" href="/tienda">
-            Visita nuestra tienda virtual
-          </a>
+          <HeroButton
+            primary
+            href="#contact"
+            text="Únete a la comunidad"
+            info="Grupo de WhatsApp con cientos de maestros de todo México. Recibe información y descuentos de primera mano."
+          />
+          <HeroButton
+            href="/planeaciones"
+            text="Descubre nuestra IA para planeaciones"
+            info="Un bot creado para generar planeaciones en segundos con inteligencia artificial."
+          />
+          <HeroButton
+            href="/tienda"
+            text="Visita nuestra tienda virtual"
+            info="Planeaciones, libros digitales y herramientas para el aula."
+          />
         </div>
       </motion.div>
     </header>
