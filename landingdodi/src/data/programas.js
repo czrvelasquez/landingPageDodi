@@ -3,6 +3,8 @@ const programas = [
     id: 'ddce',
     nombre: 'Doctorado en Desarrollo de Competencias Docentes',
     siglas: 'DDCE',
+    imagenEncabezado:
+      'https://images.unsplash.com/photo-1584697964190-1838171ade0a?auto=format&fit=crop&w=800&q=60',
     duracion: '2 años',
     modalidad: '100% en línea',
     clases: 'Jueves de 7:00 a 9:00 PM',
@@ -16,6 +18,8 @@ const programas = [
     id: 'melt',
     nombre: 'Maestría en Educación con Énfasis en Liderazgo Transformacional',
     siglas: 'MELT',
+    imagenEncabezado:
+      'https://images.unsplash.com/photo-1521790945508-bf2a36314e85?auto=format&fit=crop&w=800&q=60',
     duracion: '1 año 4 meses',
     modalidad: 'En línea, clases sabatinas',
     clases: 'Sábados de 11:00 AM a 2:00 PM',
@@ -28,6 +32,8 @@ const programas = [
   {
     id: 'convive',
     nombre: 'Congreso Virtual de Verano – CONVIVE',
+    imagenEncabezado:
+      'https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=60',
     duracion: '3 días',
     modalidad: '100% en línea',
     clases: '26, 27 y 28 de agosto',
