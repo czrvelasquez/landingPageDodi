@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React from "react";
+import { motion } from "framer-motion";
 
 function About() {
   return (
@@ -40,7 +40,7 @@ function About() {
         />
       </div>
 
-      <div className="about-grid">
+      <div className="about-grid reverse">
         <motion.img
           src="https://images.unsplash.com/photo-1532619066787-9d4f8db64396?auto=format&fit=crop&w=800&q=60"
           alt="Evento educativo"
@@ -66,6 +66,16 @@ function About() {
         </motion.div>
       </div>
 
+      <motion.img
+        src="https://images.unsplash.com/photo-1573496526977-58b2924bce98?auto=format&fit=crop&w=800&q=60"
+        alt="Docentes colaborando"
+        className="illustration-img"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      />
+
       <div className="about-grid">
         <motion.div
           className="about-text"
@@ -76,9 +86,9 @@ function About() {
         >
           <h3>Nuestro enfoque</h3>
           <p>
-            Comunidad, innovación, colaboración y tecnología. Todo lo que hacemos
-            busca transformar la práctica docente desde la raíz, conectando a
-            profesionales de todas las regiones.
+            Comunidad, innovación, colaboración y tecnología. Todo lo que
+            hacemos busca transformar la práctica docente desde la raíz,
+            conectando a profesionales de todas las regiones.
           </p>
         </motion.div>
         <motion.img
@@ -92,7 +102,7 @@ function About() {
         />
       </div>
 
-      <div className="about-grid">
+      <div className="about-grid reverse">
         <motion.img
           src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=60"
           alt="Valores"
@@ -118,6 +128,16 @@ function About() {
           </ul>
         </motion.div>
       </div>
+
+      <motion.img
+        src="https://images.unsplash.com/photo-1588075592446-ffb7d6831ac8?auto=format&fit=crop&w=800&q=60"
+        alt="Evento educativo"
+        className="illustration-img"
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
+      />
     </motion.section>
   );
 }
