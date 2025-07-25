@@ -30,15 +30,31 @@
 .hero {
   position: relative;
   background-color: var(--dodi-oscuro);
-  background-size: cover;
-  background-position: center;
   color: white;
   padding: 4rem 1rem;
   overflow: hidden;
 }
 
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(4, 52, 88, 0.8);
+  z-index: 1;
+}
+
 .hero-content {
   margin-top: 2rem;
+  position: relative;
+  z-index: 10;
 }
 
 .hero-logo {
@@ -63,14 +79,41 @@
   font-weight: bold;
 }
 
-.cta-button {
-  display: inline-block;
+.hero h1,
+.hero-content p,
+.hero-tagline {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
   margin-top: 1rem;
+}
+
+@media (min-width: 640px) {
+  .hero-buttons {
+    flex-direction: row;
+  }
+}
+
+.cta-button,
+.secondary-button {
+  display: inline-block;
   padding: 0.75rem 1.5rem;
   background: var(--dodi-vibrante);
   color: white;
   border-radius: 4px;
   text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s;
+}
+
+.cta-button:hover,
+.secondary-button:hover {
+  background: var(--dodi-oscuro);
 }
 
 .features {
@@ -163,5 +206,44 @@
 
 .testimonio-card h3 {
   margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Programas */
+.programas-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .programas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .programas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.program-card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #043458;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: left;
+}
+
+.program-category {
+  background: var(--dodi-vibrante);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  text-align: center;
+  display: inline-block;
   margin-bottom: 0.5rem;
 }

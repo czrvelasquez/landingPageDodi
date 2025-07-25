@@ -3,16 +3,15 @@ import { motion } from 'framer-motion';
 
 function Hero() {
   return (
-    <header
-      className="hero"
-      style={{
-        backgroundImage:
-          "url('https://educrear.com.ar/archivost/id_354/colaborativo-foto-2.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="absolute inset-0 bg-[#043458]/70"></div>
+    <header className="hero">
+      <div
+        className="hero-bg"
+        style={{
+          backgroundImage:
+            "url('https://educrear.com.ar/archivost/id_354/colaborativo-foto-2.jpg')",
+        }}
+      ></div>
+      <div className="hero-overlay"></div>
       <motion.div
         className="hero-content relative z-10"
         initial={{ opacity: 0, y: 30 }}
@@ -37,7 +36,15 @@ function Hero() {
         <p>
           Comunidad, innovación e inteligencia artificial al servicio de los docentes.
         </p>
-        <a className="cta-button" href="#contact">Únete a la comunidad</a>
+        <div className="hero-buttons">
+          <a className="cta-button" href="#contact">Únete a la comunidad</a>
+          <a className="secondary-button" href="/planeaciones">
+            Descubre nuestra IA para planeaciones
+          </a>
+          <a className="secondary-button" href="/tienda">
+            Visita nuestra tienda virtual
+          </a>
+        </div>
       </motion.div>
     </header>
   );
