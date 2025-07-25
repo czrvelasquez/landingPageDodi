@@ -3,6 +3,8 @@ import App from './App';
 
 test('renders landing page hero section', () => {
   render(<App />);
-  const heading = screen.getByRole('heading', { name: /welcome to dodi/i });
+  const heading = screen.getByRole('heading', {
+    name: /la educación está cambiando\. dodi evoluciona contigo\./i,
+  });
   expect(heading).toBeInTheDocument();
 });
