@@ -1,8 +1,16 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 function Contacto() {
   return (
-    <section id="contact" className="contact">
+    <motion.section
+      id="contact"
+      className="contact"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+    >
       <h2>Contact Us</h2>
       <form>
         <input type="text" placeholder="Your name" />
@@ -10,7 +18,7 @@ function Contacto() {
         <textarea placeholder="Message" />
         <button type="submit">Send</button>
       </form>
-    </section>
+    </motion.section>
   );
 }
 

@@ -28,12 +28,13 @@
 }
 
 .hero {
+  position: relative;
   background-color: var(--dodi-oscuro);
-  background-image: url('https://educrear.com.ar/archivost/id_354/colaborativo-foto-2.jpg');
   background-size: cover;
   background-position: center;
   color: white;
   padding: 4rem 1rem;
+  overflow: hidden;
 }
 
 .hero-content {
