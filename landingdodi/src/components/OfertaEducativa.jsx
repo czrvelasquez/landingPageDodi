@@ -1,22 +1,17 @@
 import React from 'react';
+import programas from '../data/programas';
+import ProgramaCard from './ProgramaCard';
 
 function OfertaEducativa() {
+  const programasActivos = programas.filter(p => p.estado === 'activo');
+
   return (
-    <section id="features" className="features">
-      <h2>Features</h2>
-      <div className="feature-grid">
-        <div className="feature-item">
-          <h3>Automation</h3>
-          <p>Automate your document workflows.</p>
-        </div>
-        <div className="feature-item">
-          <h3>Integration</h3>
-          <p>Connect with popular tools.</p>
-        </div>
-        <div className="feature-item">
-          <h3>Security</h3>
-          <p>Keep your data safe.</p>
-        </div>
+    <section id="oferta" className="oferta-educativa">
+      <h2>Nuestra oferta educativa</h2>
+      <div className="programas-grid">
+        {programasActivos.map(programa => (
+          <ProgramaCard key={programa.id} {...programa} />
+        ))}
       </div>
     </section>
   );
