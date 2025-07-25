@@ -3,7 +3,11 @@ import React from 'react';
 function Navbar() {
   return (
     <nav className="nav">
-      <span className="logo">DoDi</span>
+      <img
+        src="https://i.ibb.co/mfvMVzf/logo.png"
+        alt="DoDi"
+        className="navbar-logo"
+      />
       <ul className="nav-links">
         <li><a href="#features">Features</a></li>
         <li><a href="#about">About</a></li>

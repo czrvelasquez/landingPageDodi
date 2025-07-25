@@ -1,3 +1,10 @@
+:root {
+  --dodi-claro: #7fadbd;
+  --dodi-celeste: #c2e8f1;
+  --dodi-oscuro: #043458;
+  --dodi-vibrante: #147da3;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
