@@ -188,6 +188,7 @@
 
 .features {
   padding: 4rem 1rem;
+  background-color: #ffffff;
 }
 
 .feature-grid {
@@ -203,11 +204,19 @@
   padding: 1rem;
   border-radius: 4px;
   width: 200px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #147da3;
+  transition: all 0.3s ease-in-out;
 }
 
-.about,
+.about {
+  padding: 4rem 1rem;
+  background-color: #e9eef3;
+}
+
 .contact {
   padding: 4rem 1rem;
+  background-color: #ffffff;
 }
 
 .extended-about h2 {
@@ -277,10 +286,12 @@
   backdrop-filter: blur(6px);
   padding: 2rem;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   max-width: 40rem;
   margin: 0 auto;
   text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-left: 4px solid #147da3;
 }
 
 .contact-intro {
@@ -311,10 +322,7 @@
   color: #fff;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition:
-    background 0.2s,
-    transform 0.2s,
-    box-shadow 0.2s;
+  transition: all 0.3s ease-in-out;
 }
 
 .contact button:hover {
@@ -408,6 +416,11 @@
   gap: 1.5rem;
 }
 
+.testimonios-section {
+  background-color: #e9eef3;
+  padding: 4rem 1rem;
+}
+
 @media (min-width: 768px) {
   .testimonio-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -426,10 +439,11 @@
   backdrop-filter: blur(6px);
   color: #043458;
   border-radius: 1.25rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   padding: 2rem;
   text-align: left;
   transition: all 0.3s ease-in-out;
+  border-left: 4px solid #147da3;
 }
 
 .testimonio-card:hover {
@@ -482,10 +496,11 @@
   background: rgba(255, 255, 255, 0.9);
   color: #043458;
   border-radius: 1rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   padding: 1.5rem;
   text-align: left;
   transition: all 0.3s ease-in-out;
+  border-left: 4px solid #147da3;
 }
 
 .program-card:hover {

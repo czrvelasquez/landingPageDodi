@@ -14,6 +14,10 @@ body {
   font-family: 'Inter', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f4f8;
+  background-image: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png');
+  background-repeat: repeat;
+  background-size: auto;
 }
 
 h1,
@@ -23,6 +27,11 @@ h4,
 h5,
 h6 {
   font-family: 'Inter', sans-serif;
+}
+
+h2 {
+  border-left: 6px solid #147da3;
+  padding-left: 0.75rem;
 }
 
 code {
