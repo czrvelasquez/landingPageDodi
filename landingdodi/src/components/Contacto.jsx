@@ -23,9 +23,10 @@ function Contacto() {
           contigo para darte atención personalizada.
         </p>
         <form
-          action="https://formsubmit.co/cesar.velasquez.rios@gmail.com"
+          action="https://formspree.io/f/xyznm789"
           method="POST"
         >
+          <input type="hidden" name="_redirect" value="/gracias" />
           <input
             type="text"
             name="nombre"
