@@ -6,6 +6,7 @@ import OfertaEducativa from './components/OfertaEducativa';
 import Testimonios from './components/Testimonios';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
+import WhatsappButton from './components/WhatsappButton';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Testimonios />
       <Contacto />
       <Footer />
+      <WhatsappButton />
     </div>
   );
 }
