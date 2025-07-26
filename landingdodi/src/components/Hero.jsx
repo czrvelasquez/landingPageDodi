@@ -38,23 +38,31 @@ function Hero() {
         <p>
           Comunidad, innovación e inteligencia artificial al servicio de los docentes.
         </p>
-        <div className="hero-buttons">
-          <HeroButton
-            primary
-            href="#contact"
-            text="Únete a la comunidad"
-            info="Grupo de WhatsApp con cientos de maestros de todo México. Recibe información y descuentos de primera mano."
-          />
-          <HeroButton
-            href="/planeaciones"
-            text="Descubre nuestra IA para planeaciones"
-            info="Un bot creado para generar planeaciones en segundos con inteligencia artificial."
-          />
-          <HeroButton
-            href="/tienda"
-            text="Visita nuestra tienda virtual"
-            info="Planeaciones, libros digitales y herramientas para el aula."
-          />
+        <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-6">
+          <a
+            href="https://chat.whatsapp.com/CrrdO9DPUUJ3eLfXHn2coF"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            Únete a la Comunidad
+          </a>
+          <a
+            href="https://portal-planeaciones-io9e.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            Banco de Planeaciones
+          </a>
+          <a
+            href="https://docenciadigitalmx.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn"
+          >
+            Tienda Virtual
+          </a>
         </div>
       </motion.div>
     </header>

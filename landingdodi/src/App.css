@@ -158,6 +158,17 @@
   transition: all 0.3s ease-in-out;
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--dodi-vibrante);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
 .hero-button-wrapper {
   position: relative;
   display: flex;
@@ -181,6 +192,12 @@
 
 .cta-button:hover,
 .secondary-button:hover {
+  background: var(--dodi-oscuro);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover {
   background: var(--dodi-oscuro);
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
