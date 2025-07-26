@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const promociones = [
   {
@@ -35,9 +36,16 @@ function Navbar() {
         className="navbar-logo"
       />
       {promo && (
-        <a href={promo.link} className="promo-banner">
+        <motion.a
+          href={promo.link}
+          className="promo-banner"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          whileHover={{ scale: 1.05 }}
+        >
           {promo.mensaje}
-        </a>
+        </motion.a>
       )}
       <ul className="nav-links">
         <li><a href="#features">Features</a></li>
