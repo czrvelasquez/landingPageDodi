@@ -67,16 +67,18 @@ function Modal({ open, onClose, title, children, ctaText, ctaUrl }) {
           >
             ✖️
           </button>
-          <h3 id="modal-title">{title}</h3>
+          {title && <h3 id="modal-title">{title}</h3>}
           <div className="modal-body">{children}</div>
-          <a
-            href={ctaUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="modal-cta"
-          >
-            {ctaText}
-          </a>
+          {ctaText && ctaUrl && (
+            <a
+              href={ctaUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="modal-cta"
+            >
+              {ctaText}
+            </a>
+          )}
         </motion.div>
       </motion.div>
     </AnimatePresence>
