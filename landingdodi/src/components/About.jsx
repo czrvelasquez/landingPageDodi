@@ -30,8 +30,8 @@ function About() {
           </p>
         </motion.div>
         <motion.img
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60"
-          alt="Equipo trabajando en laptops"
+          src="https://i.ibb.co/wZngvmXm/PROTOCOLO-38.jpg"
+          alt="DoDi imagen 1"
           className="about-img"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -42,8 +42,8 @@ function About() {
 
       <div className="about-grid reverse">
         <motion.img
-          src="https://images.unsplash.com/photo-1596495577886-d920f1c34fcd?auto=format&fit=crop&w=800&q=60"
-          alt="Docentes en videollamada"
+          src="https://i.ibb.co/PsHVP6W8/PROTOCOLO-34.jpg"
+          alt="DoDi imagen 2"
           className="about-img"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -68,8 +68,8 @@ function About() {
 
       <div className="illustration-wrapper">
         <motion.img
-          src="https://images.unsplash.com/photo-1581093588391-34efba5cd5a1?auto=format&fit=crop&w=800&q=60"
-          alt="Educación y tecnología"
+          src="https://i.ibb.co/WLZpgmP/PROTOCOLO-29.jpg"
+          alt="DoDi imagen 3"
           className="illustration-img"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
@@ -94,8 +94,8 @@ function About() {
           </p>
         </motion.div>
         <motion.img
-          src="https://images.unsplash.com/photo-1581090700227-80c4e07a7827?auto=format&fit=crop&w=800&q=60"
-          alt="Robótica educativa"
+          src="https://i.ibb.co/B5TTM2DV/PROTOCOLO-24.jpg"
+          alt="DoDi imagen 4"
           className="about-img"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -106,8 +106,8 @@ function About() {
 
       <div className="about-grid reverse">
         <motion.img
-          src="https://images.unsplash.com/photo-1531379410504-2377a147a0e8?auto=format&fit=crop&w=800&q=60"
-          alt="Comunidad de profesores"
+          src="https://i.ibb.co/WWRXRrVY/PROTOCOLO-18.jpg"
+          alt="DoDi imagen 5"
           className="about-img"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -133,8 +133,8 @@ function About() {
 
       <div className="illustration-wrapper">
         <motion.img
-          src="https://images.unsplash.com/photo-1551836022-b88bfb1411c7?auto=format&fit=crop&w=800&q=60"
-          alt="Congreso educativo"
+          src="https://i.ibb.co/bRBnV95p/PROTOCOLO-20.jpg"
+          alt="DoDi imagen 6"
           className="illustration-img"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
