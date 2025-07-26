@@ -65,7 +65,7 @@ function Modal({ open, onClose, title, children, ctaText, ctaUrl }) {
             onClick={onClose}
             aria-label="Cerrar modal"
           >
-            \u2715
+            ✖️
           </button>
           <h3 id="modal-title">{title}</h3>
           <div className="modal-body">{children}</div>
