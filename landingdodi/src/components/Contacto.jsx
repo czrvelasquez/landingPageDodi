@@ -23,7 +23,7 @@ function Contacto() {
           contigo para darte atención personalizada.
         </p>
         <form
-          action="https://formspree.io/f/xyznm789"
+          action="https://formspree.io/f/xpwldjel"
           method="POST"
         >
           <input type="hidden" name="_redirect" value="/gracias" />
