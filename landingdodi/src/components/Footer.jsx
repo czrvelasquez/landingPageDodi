@@ -53,6 +53,7 @@ function Footer() {
           className="social-link"
         >
           <FacebookIcon />
+          <span className="social-tooltip">Facebook</span>
         </a>
         <a
           href="https://www.tiktok.com/@docenciadigitalmx"
@@ -61,6 +62,7 @@ function Footer() {
           className="social-link"
         >
           <TikTokIcon />
+          <span className="social-tooltip">TikTok</span>
         </a>
         <a
           href="https://www.instagram.com/docencia.digitalmx/"
@@ -69,6 +71,7 @@ function Footer() {
           className="social-link"
         >
           <InstagramIcon />
+          <span className="social-tooltip">Instagram</span>
         </a>
       </div>
       <p className="footer-message">

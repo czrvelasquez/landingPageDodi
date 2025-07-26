@@ -7,19 +7,33 @@ import Testimonios from './components/Testimonios';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import WhatsappButton from './components/WhatsappButton';
+import WaveDivider from './components/WaveDivider';
+import Loader from './components/Loader';
+import { AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
 
 function App() {
+  const [loading, setLoading] = useState(true);
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <About />
-      <OfertaEducativa />
-      <Testimonios />
-      <Contacto />
-      <Footer />
-      <WhatsappButton />
-    </div>
+    <>
+      <AnimatePresence>{loading && <Loader onFinish={() => setLoading(false)} />}</AnimatePresence>
+      {!loading && (
+        <div className="App">
+          <Navbar />
+          <Hero />
+          <WaveDivider />
+          <About />
+          <WaveDivider flip />
+          <OfertaEducativa />
+          <WaveDivider />
+          <Testimonios />
+          <WaveDivider flip />
+          <Contacto />
+          <Footer />
+          <WhatsappButton />
+        </div>
+      )}
+    </>
   );
 }
 

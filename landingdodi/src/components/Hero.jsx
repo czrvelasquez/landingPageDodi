@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import HeroButton from './HeroButton';
 
 function Hero() {
+  const isSmall = window.innerWidth < 640;
   return (
     <header className="hero">
       <div
@@ -15,9 +16,9 @@ function Hero() {
       <div className="hero-overlay"></div>
       <motion.div
         className="hero-content relative z-10"
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: isSmall ? 20 : 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: isSmall ? 0.6 : 0.8 }}
         viewport={{ once: true }}
       >
         <img
