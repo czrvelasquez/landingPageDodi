@@ -7,6 +7,7 @@ import Testimonios from './components/Testimonios';
 import Contacto from './components/Contacto';
 import Footer from './components/Footer';
 import WhatsappButton from './components/WhatsappButton';
+import PromoFloatButton from './components/PromoFloatButton';
 import WaveDivider from './components/WaveDivider';
 import Loader from './components/Loader';
 import { AnimatePresence } from 'framer-motion';
@@ -31,6 +32,7 @@ function App() {
           <Contacto />
           <Footer />
           <WhatsappButton />
+          <PromoFloatButton />
         </div>
       )}
     </>
