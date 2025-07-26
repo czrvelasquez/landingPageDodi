@@ -11,6 +11,8 @@ const programas = [
     inicio: 'Agosto 2025',
     estado: 'activo',
     descripcion: 'Formación doctoral enfocada en el desarrollo profesional docente y la gestión de competencias para la educación del futuro.',
+    detalle:
+      'Formación doctoral que profundiza en la planeación y desarrollo de estrategias docentes basadas en competencias. A lo largo del programa se abordan tendencias de innovación educativa, liderazgo académico y uso de tecnologías emergentes para transformar el aprendizaje. Está dirigido a profesionales interesados en potenciar su carrera con un enfoque de investigación aplicada.',
     urlMasInfo: '/programas/ddce',
     destacado: true,
   },
@@ -26,6 +28,8 @@ const programas = [
     inicio: 'Agosto 2025',
     estado: 'activo',
     descripcion: 'Una maestría para líderes educativos que buscan transformar sus entornos desde la innovación, el liderazgo y la inteligencia digital.',
+    detalle:
+      'La Maestría MELT prepara líderes capaces de impulsar la transformación escolar mediante la integración de competencias digitales, liderazgo colaborativo y estrategias de evaluación auténtica. Sus módulos se imparten por especialistas en línea y permiten aplicar de inmediato lo aprendido en el contexto laboral. Ideal para docentes y coordinadores que buscan impactar su comunidad.',
     urlMasInfo: '/programas/melt',
     destacado: true,
   },
@@ -40,6 +44,8 @@ const programas = [
     inicio: 'Agosto 2025',
     estado: 'activo',
     descripcion: 'Evento internacional con expertos en IA, evaluación y transformación educativa. Grabaciones incluidas.',
+    detalle:
+      'CONVIVE 2025 es un congreso virtual que reúne a expertos nacionales e internacionales en temas de inteligencia artificial, evaluación por competencias y gestión del cambio educativo. Durante tres días disfrutarás de conferencias magistrales y paneles interactivos desde la comodidad de tu casa. Las grabaciones permanecerán disponibles para que repases cada sesión.',
     urlMasInfo: '/eventos/convive',
     destacado: false,
   },
