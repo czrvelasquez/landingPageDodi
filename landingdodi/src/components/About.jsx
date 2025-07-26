@@ -30,8 +30,8 @@ function About() {
           </p>
         </motion.div>
         <motion.img
-          src="https://images.unsplash.com/photo-1523580494863-6c9f20964b4a?auto=format&fit=crop&w=800&q=60"
-          alt="Docentes en comunidad"
+          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60"
+          alt="Equipo trabajando en laptops"
           className="about-img"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -42,8 +42,8 @@ function About() {
 
       <div className="about-grid reverse">
         <motion.img
-          src="https://images.unsplash.com/photo-1532619066787-9d4f8db64396?auto=format&fit=crop&w=800&q=60"
-          alt="Evento educativo"
+          src="https://images.unsplash.com/photo-1596495577886-d920f1c34fcd?auto=format&fit=crop&w=800&q=60"
+          alt="Docentes en videollamada"
           className="about-img"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -67,8 +67,8 @@ function About() {
       </div>
 
       <motion.img
-        src="https://images.unsplash.com/photo-1573496526977-58b2924bce98?auto=format&fit=crop&w=800&q=60"
-        alt="Docentes colaborando"
+        src="https://images.unsplash.com/photo-1581093588391-34efba5cd5a1?auto=format&fit=crop&w=800&q=60"
+        alt="Educación y tecnología"
         className="illustration-img"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
@@ -92,8 +92,8 @@ function About() {
           </p>
         </motion.div>
         <motion.img
-          src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=800&q=60"
-          alt="Trabajo colaborativo"
+          src="https://images.unsplash.com/photo-1581090700227-80c4e07a7827?auto=format&fit=crop&w=800&q=60"
+          alt="Robótica educativa"
           className="about-img"
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -104,8 +104,8 @@ function About() {
 
       <div className="about-grid reverse">
         <motion.img
-          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=60"
-          alt="Valores"
+          src="https://images.unsplash.com/photo-1531379410504-2377a147a0e8?auto=format&fit=crop&w=800&q=60"
+          alt="Comunidad de profesores"
           className="about-img"
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -130,8 +130,8 @@ function About() {
       </div>
 
       <motion.img
-        src="https://images.unsplash.com/photo-1588075592446-ffb7d6831ac8?auto=format&fit=crop&w=800&q=60"
-        alt="Evento educativo"
+        src="https://images.unsplash.com/photo-1551836022-b88bfb1411c7?auto=format&fit=crop&w=800&q=60"
+        alt="Congreso educativo"
         className="illustration-img"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
