@@ -23,7 +23,7 @@ function Contacto() {
           contigo para darte atención personalizada.
         </p>
         <form
-          action="https://formsubmit.co/TUCORREO@ejemplo.com"
+          action="https://formsubmit.co/cesar.velasquez.rios@gmail.com"
           method="POST"
         >
           <input
