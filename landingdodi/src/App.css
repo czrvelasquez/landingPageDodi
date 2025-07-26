@@ -588,3 +588,62 @@
   color: var(--dodi-celeste);
 }
 
+.promo-float-button {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .promo-banner {
+    display: none;
+  }
+
+  .promo-float-button {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .promo-float-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: linear-gradient(to right, #147da3, #043458);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .promo-float-link:hover {
+    transform: scale(1.1);
+  }
+
+  .promo-tooltip {
+    margin-top: 0.5rem;
+    background: #147da3;
+    color: #fff;
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    opacity: 0;
+    transform: translateY(0.5rem);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .promo-float-button:hover .promo-tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
