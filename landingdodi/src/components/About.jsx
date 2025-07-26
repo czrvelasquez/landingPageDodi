@@ -66,15 +66,17 @@ function About() {
         </motion.div>
       </div>
 
-      <motion.img
-        src="https://images.unsplash.com/photo-1581093588391-34efba5cd5a1?auto=format&fit=crop&w=800&q=60"
-        alt="Educación y tecnología"
-        className="illustration-img"
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      />
+      <div className="illustration-wrapper">
+        <motion.img
+          src="https://images.unsplash.com/photo-1581093588391-34efba5cd5a1?auto=format&fit=crop&w=800&q=60"
+          alt="Educación y tecnología"
+          className="illustration-img"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        />
+      </div>
 
       <div className="about-grid">
         <motion.div
@@ -129,15 +131,17 @@ function About() {
         </motion.div>
       </div>
 
-      <motion.img
-        src="https://images.unsplash.com/photo-1551836022-b88bfb1411c7?auto=format&fit=crop&w=800&q=60"
-        alt="Congreso educativo"
-        className="illustration-img"
-        initial={{ opacity: 0, scale: 0.95 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      />
+      <div className="illustration-wrapper">
+        <motion.img
+          src="https://images.unsplash.com/photo-1551836022-b88bfb1411c7?auto=format&fit=crop&w=800&q=60"
+          alt="Congreso educativo"
+          className="illustration-img"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        />
+      </div>
     </motion.section>
   );
 }
