@@ -272,9 +272,10 @@
 }
 
 .contact-intro {
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #043458;
+  margin-bottom: 1.5rem;
 }
 
 .contact form {
@@ -292,18 +293,20 @@
 }
 
 .contact button {
-  padding: 0.75rem;
+  padding: 0.75rem 1.5rem;
   border: none;
-  background: var(--dodi-vibrante);
-  color: white;
-  border-radius: 4px;
+  background: #147da3;
+  color: #fff;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition:
+    background 0.2s,
     transform 0.2s,
     box-shadow 0.2s;
 }
 
 .contact button:hover {
+  background: #043458;
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
@@ -314,6 +317,10 @@
   padding: 1.5rem 1rem;
   text-align: center;
   margin-top: 5rem;
+}
+
+.footer .navbar-logo {
+  filter: drop-shadow(0 1px 4px rgba(255, 255, 255, 0.9));
 }
 
 .social-icons {
