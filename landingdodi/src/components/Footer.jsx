@@ -8,7 +8,7 @@ function Footer() {
         alt="DoDi"
         className="navbar-logo"
       />
-      <p>&copy; {new Date().getFullYear()} DoDi. All rights reserved.</p>
+      <p className="footer-copy">&copy; DoDi {new Date().getFullYear()}</p>
     </footer>
   );
 }
